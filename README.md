@@ -67,4 +67,5 @@ Concerning the arguments for the python script, the game time are consecutive so
 In the repository you will find a json file 'balanced_dataset.json' is the one I trained the LSTM on, I generated this dataset with the help of the Conditional GAN
 
 And in the generation folder you will find 'generated_10.json' file, this is a game I generated using the whole approach, this is the output of the generate.py file
+
 ![Generate.py output](imga2.png)
