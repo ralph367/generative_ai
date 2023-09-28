@@ -53,7 +53,7 @@ Then clone the repository, and do the following commands:
 ```
 cd generative_ai/generation
 docker build -t game-generator .
-docker run -v $(pwd):/app game-generator python generate.py --games 2 --time 2 1
+docker run -v $(pwd):/app game-generator python -u generate.py --games 2 --time 2 1
 ```
 
 Once done the match json file will be auto generated in the same directory
@@ -66,4 +66,5 @@ Concerning the arguments for the python script, the game time are consecutive so
 
 In the repository you will find a json file 'balanced_dataset.json' is the one I trained the LSTM on, I generated this dataset with the help of the Conditional GAN
 
-And in the generation folder you will find 'generated_10.json' file, this is a game I generated using the whole approach
+And in the generation folder you will find 'generated_10.json' file, this is a game I generated using the whole approach, this is the output of the generate.py file
+![Generate.py output](image2.png)
